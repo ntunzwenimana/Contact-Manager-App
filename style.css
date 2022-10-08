@@ -1,0 +1,155 @@
+:root {
+  --color-primary: rgb(13, 143, 86);
+  --color-secondary: rgb(244, 193, 11);
+  --color-tertiary: rgb(232, 228, 228);
+  --color-forth: white;
+  --color-five: black;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-size: 70%; */
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.app__container {
+  background-color: var(--color-tertiary);
+  border-radius: 5px;
+  /* box-shadow: 0 0 0px 8px; */
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.app__title {
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.register__form {
+  /* border: 1px solid red; */
+  text-align: justify;
+  width: 70%;
+  margin: 0 auto;
+  transition: 2s;
+}
+
+.hide-register__form {
+  display: none;
+}
+
+.form__control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.name__field,
+.phone__field,
+.email__field {
+  display: inline-block;
+  padding: 5px 10px;
+  width: 300px;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  color: black;
+  border-bottom: 1.5px solid var(--color-primary);
+}
+.submit__btn {
+  font-size: 17px;
+  padding: 3px 6px;
+  outline: none;
+  border: none;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  transition: 0.3s;
+}
+.submit__btn:hover {
+  color: white;
+  border-radius: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.hide-home__form {
+  display: none;
+}
+
+.Welcome__title {
+  color: var(--color-forth);
+  text-shadow: 1px 1px 1px black;
+}
+
+.hide-create-contact__page {
+  display: none;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.add-contact__form {
+  background-color: var(--color-primary);
+  width: 60%;
+  text-align: justify;
+  padding: 0.8rem;
+}
+
+.contacts__list {
+  background-color: gray;
+  width: 40%;
+  flex-grow: initial;
+}
+
+.hide-contact__list {
+  display: none;
+}
+
+.name__input,
+.number__input {
+  margin: 7px 5px;
+  padding: 0.5rem;
+  text-align: justify;
+  color: var(--color-primary);
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+.save-contact__btn {
+  background-color: var(--color-secondary);
+  padding: 5px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 7px 5px;
+  cursor: pointer;
+}
+
+.save-contact__btn:hover {
+  background-color: white;
+  color: var(--color-primary);
+}
+
+.contact__control {
+  color: black;
+  background-color: #fff;
+}

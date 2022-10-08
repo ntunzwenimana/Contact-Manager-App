@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>App Manager</title>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="app__container">
+      <h1 class="app__title">Contact Manager App</h1>
+
+      <div class="home__wrapper">
+        <h2 class="register__message">
+          Are you new here? Please
+          <span class="login"><a href="#" class="login__btn">login</a></span> if
+          you already have an account or
+          <span class="register"
+            ><a href="#" class="register__btn">create an account </a></span
+          >
+          to get started. It is easy, do it in less than 2min.
+        </h2>
+
+        <div class="signup__form">
+          <form action="#" class="register__form hide-register__form">
+            <div class="form__control">
+              <label for="username">Your name here:</label>
+              <input
+                class="name__field"
+                type="text"
+                name="username"
+                id="name"
+                placeholder="Your name here"
+                required
+              />
+            </div>
+
+            <div class="form__control">
+              <label for="phone">Your Phone number:</label>
+              <input
+                class="phone__field"
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder="Your number here"
+                required
+              />
+            </div>
+
+            <div class="form__control">
+              <label for="phone">Your valid email</label>
+              <input
+                class="email__field"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Put a valid email here"
+                required
+              />
+            </div>
+            <p class="confirm__paragraph">
+              By pressing on "Register", you agree our terms and conditions that
+              we use in our Contact manager App. Press the button below to
+              submit your form.
+            </p>
+            <button class="submit__btn" type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+      <div class="create-contact__page hide-create-contact__page">
+        <h3 class="Welcome__title">
+          Welcome here. You can now start adding contacts
+        </h3>
+
+        <div class="contacts__wrapper">
+          <section class="add-contact__form">
+            <form action="#" class="save-contact__form">
+              <input
+                type="text"
+                placeholder="Enter a contact name here"
+                class="name__input"
+              />
+              <br />
+              <input
+                type="number"
+                placeholder="Enter a phone number"
+                class="number__input"
+              />
+              <br />
+
+              <input
+                type="submit"
+                value="Add contact"
+                class="save-contact__btn"
+              />
+            </form>
+          </section>
+          <section class="contacts__list hide-contact__list">
+            <!-- <div class="contact__control">
+              <input type="text" id="text" readonly class="contact__item" />
+              <button class="edit__btn">Edit</button>
+              <button class="delete__btn">Delete</button>
+            </div> -->
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
